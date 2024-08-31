@@ -1,0 +1,44 @@
+/* src/components/Post.module.css */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    margin-bottom: 15px; /* Space between inputs */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  input:focus {
+    border-color: #ff9800; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  button {
+    background-color: #ff9800; /* Orange button */
+    color: #fff; /* White text */
+    border: none;
+    padding: 15px;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  button:hover {
+    background-color: #e68900; /* Darker orange on hover */
+  }
+  

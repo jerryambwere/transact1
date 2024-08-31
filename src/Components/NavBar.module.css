@@ -1,0 +1,37 @@
+/* src/components/NavBar.module.css */
+.navbar {
+    background: #333; /* Dark background for contrast */
+    padding: 10px 20px; /* Space around content */
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .navbar ul {
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0 15px; /* Space between items */
+  }
+  
+  .navbar a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .navbar a:hover {
+    color: #ff9800; /* Change color on hover */
+  }
+  
+  .navbar a.active {
+    color: #ff9800; /* Highlight the active link */
+    border-bottom: 2px solid #ff9800; /* Underline active link */
+  }
+  

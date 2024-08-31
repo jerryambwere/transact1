@@ -1,0 +1,93 @@
+/* src/components/Transactions.module.css */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse; /* Merge borders */
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+  }
+  
+  .table th {
+    background-color: #f4f4f4; /* Light background for headers */
+    color: #333; /* Dark text for headers */
+    font-weight: bold;
+  }
+  
+  .table tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+  }
+  
+  .date, .category, .amount, .description {
+    font-size: 16px;
+  }
+  
+  .category {
+    color: #ff9800; /* Orange color for category */
+  }
+  
+  .amount {
+    color: #4caf50; /* Green color for amount */
+    font-weight: bold; /* Bold text for amounts */
+  }
+  
+  .description {
+    color: #555; /* Slightly lighter color for description */
+  }
+/* Responsive design */
+@media (max-width: 768px) {
+    .table {
+      font-size: 14px; /* Smaller font size on smaller screens */
+    }
+  
+    .table th, .table td {
+      padding: 8px; /* Reduce padding */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .table {
+      display: block; /* Stack table as block for small screens */
+      overflow-x: auto; /* Allow horizontal scrolling */
+    }
+  
+    .table thead {
+      display: none; /* Hide table headers on small screens */
+    }
+  
+    .table, .table tbody, .table tr, .table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .table tr {
+      margin-bottom: 10px; /* Space between rows */
+      border-bottom: 1px solid #ddd; /* Border between rows */
+    }
+  
+    .table td {
+      text-align: right; /* Align text to the right */
+      position: relative;
+      padding-left: 50%; /* Space for labels */
+    }
+  
+    .table td::before {
+      content: attr(data-label); /* Add labels before data */
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 10px;
+      font-weight: bold;
+      color: #333;
+      background: #f4f4f4;
+    }
+  }
+    
